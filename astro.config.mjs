@@ -8,4 +8,9 @@ import tailwind from "@astrojs/tailwind";
 export default defineConfig({
   site: "https://mohalkurdi.com",
   integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    shikiConfig: {
+      theme: "material-theme-palenight",
+    },
+  },
 });
